@@ -1,0 +1,97 @@
+/* will change colors to vars later */
+.app-header {
+  background-color: rgb(0, 164, 164);
+  color: #fff;
+  padding: 1em;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 80px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.temp-logo {
+  font-family: 'Allura', cursive;
+  font-size: 3rem;
+  text-align: center;
+  transform: translateY(25%);
+  margin-inline-start: 40px;
+  padding: 5px;
+  color: #FFDB58;
+}
+
+.app-header nav {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin-inline-end: 40px;
+}
+
+.app-header nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  margin-inline-end: 2px;
+}
+
+.app-header nav a:hover {
+  color: #0ad0f3;
+}
+
+.app-header nav a.active-link {
+  color: #FFDB58;
+  border-bottom: 2px solid #fff;
+}
+
+
+@media (max-width: 767px) {
+  .app-header {
+    flex-direction: column;
+    height: auto;
+    padding: 0.5em;
+  }
+  
+  .temp-logo {
+    font-size: 2.2rem;
+    margin-inline-start: 0;
+    transform: none;
+  }
+  
+  .app-header nav {
+    justify-content: center;
+  }
+  
+  .app-header nav a {
+    font-size: 1rem;
+    margin: 0 0.5em;
+  }
+}
+
+
+
+
+
+/* .logo-img {
+  height:40px;
+}
+.logo-container {
+  display: flex;
+  gap: 10px;
+  margin-inline-start: 40px;
+  padding: 5px;
+} */
+
+
+/* media old: */
+/* .logo-img {
+  height: 30px;
+}
+
+.logo-container {
+  align-self: center;
+  margin-inline: 0;
+} */

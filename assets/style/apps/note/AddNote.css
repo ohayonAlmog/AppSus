@@ -1,0 +1,96 @@
+.add-note {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: auto;
+    max-width: 100%;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .add-note * {
+    font-size: 1rem;
+    outline: none;
+    border: none;
+  }
+  
+  .add-note .btns-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .add-note input {
+    padding: 0.5em;
+    height: auto;
+    border-radius: 50px;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .add-note button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px;
+    border-radius: 50%;
+  }
+  
+  .add-note button:hover {
+    transform: scale(1.2);
+    background-color: #eee;
+  }
+  
+  .add-note button.selected {
+    background-color: #eee;
+  }
+  
+  .add-note button:last-of-type {
+    padding-right: 5px;
+  }
+  
+
+  @media screen and (max-width: 767px) {
+    .add-note {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+      margin-bottom: 20px;
+    }
+  
+    .add-note input {
+      border-radius: 5px;
+      margin-bottom: 10px;
+      text-align: left;
+      padding: 10px;
+      box-shadow: none;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  
+    .add-note .btns-container {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    .add-note button {
+      margin: 0 5px;
+      border-radius: 50%;
+      background-color: #f1f1f1;
+      box-shadow: 0px 3px 10px rgba(95, 95, 95, 0.1);
+    }
+  
+    .add-note button:last-of-type {
+      padding-right: 10px;
+    }
+  }
+  
+  
+  
